@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Error</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand">Welcome, <%= username.toUpperCase() %></span>
+            <h4 style="text-align: center; color: white; text-transform: uppercase; letter-spacing: 0.1em; word-spacing: 0.2em;">Listing all journals</h4>
+            <form class="form-inline">
+                <a class="nav-link" href="/journals"><button type="button" class="btn btn-secondary">Dashboard</button></a>
+                <a class="nav-link" href="/journals/addnew"><button type="button" class="btn btn-light">Add new</button></a>
+                <a class="nav-link" href="/users/logout"><button type="button" class="btn btn-info">Logout</button></a>
+            </form>
+        </nav>
+          
+        <h1 class="mt-5" style="text-align: center; text-transform: uppercase">Error fetching journals</h1>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</body>
+</html>
